@@ -41,5 +41,44 @@ public class Controller {
             gui.setImage(newScreen.getImage());
         }
     }
+    public void goEast(){
+        // get the screen we are on right now
+        Screen current = map.getScreen(row, col);
+        // ask if we can move north
+        if(current.canGoNorth()){
+            // move up a row
+            col++;
+            // get the new screen
+            Screen newScreen = map.getScreen(row, col);
+            // set the image
+            gui.setImage(newScreen.getImage());
+        }
+    }
+    public void goSouth(){
+        // get the screen we are on right now
+        Screen current = map.getScreen(row, col);
+        // ask if we can move north
+        if(current.canGoNorth()){
+            // move up a row
+            row++;
+            // get the new screen
+            Screen newScreen = map.getScreen(row, col);
+            // set the image
+            gui.setImage(newScreen.getImage());
+        }
+    }
+    public void goWest(){
+        // get the screen we are on right now
+        Screen current = map.getScreen(row, col);
+        // ask if we can move north
+        if(current.canGoNorth()){
+            // move up a row
+            col--;
+            // get the new screen
+            Screen newScreen = map.getScreen(row, col);
+            // set the image
+            gui.setImage(newScreen.getImage());
+        }
+    }
     
 }

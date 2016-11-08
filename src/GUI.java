@@ -56,10 +56,25 @@ public class GUI extends javax.swing.JFrame {
         });
 
         westButton.setText("West");
+        westButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                westButtonActionPerformed(evt);
+            }
+        });
 
         eastButton.setText("East");
+        eastButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastButtonActionPerformed(evt);
+            }
+        });
 
         southButton.setText("South");
+        southButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                southButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,6 +121,18 @@ public class GUI extends javax.swing.JFrame {
     private void northButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_northButtonActionPerformed
         controller.goNorth();
     }//GEN-LAST:event_northButtonActionPerformed
+
+    private void westButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westButtonActionPerformed
+        controller.goWest();
+    }//GEN-LAST:event_westButtonActionPerformed
+
+    private void eastButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastButtonActionPerformed
+        controller.goEast();
+    }//GEN-LAST:event_eastButtonActionPerformed
+
+    private void southButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southButtonActionPerformed
+        controller.goSouth();
+    }//GEN-LAST:event_southButtonActionPerformed
 
     /**
      * @param args the command line arguments

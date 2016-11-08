@@ -81,16 +81,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="West"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="westButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="eastButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="East"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eastButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="southButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="South"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="southButtonActionPerformed"/>
+      </Events>
     </Component>
     <Container class="ImageComponent" name="imagePanel">
 
